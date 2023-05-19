@@ -29,7 +29,7 @@ const conferences: Conference[] = [
 		website: new URL('https://devfest2023.gdgnantes.com/'),
 		illustration: {
 			src: new URL('./assets/devfest.webp', import.meta.url),
-			description: "plan d'ensemble du grand hall d'un centre de conférence, rempli de participants, escalator sur le côté droit, pont supérieur sur le côté opposé avec de grands écrans de télévision et des cabines de conférence, angle élevé, isométrique, dans le style d'un écran de World of Warcraft"
+			description: "plan d'ensemble du grand hall d'un centre de conférence, rempli de participants, escalator sur le côté droit, pont supérieur sur le côté opposé avec de grands écrans de télévision et des cabines de conférence, angle élevé, isométrique, dans le style d'une capture d'écran de World of Warcraft"
 		}
 	},
 	{
@@ -43,7 +43,7 @@ const conferences: Conference[] = [
 		website: new URL('https://agilenantes.org/evenements/agile-tour-nantes/agile-tour-nantais-2023/'),
 		illustration: {
 			src: new URL('./assets/agiletour.webp', import.meta.url),
-			description: ""
+			description: "un groupe de développeurs et de concepteurs debout devant un tableau kanban, dans le style d'un dessin animé Walt Disney d'époque"
 		}
 	},
 	{
