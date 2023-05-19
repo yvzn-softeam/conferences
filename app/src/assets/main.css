@@ -1,0 +1,93 @@
+* {
+	box-sizing: border-box;
+	/* https://css-tricks.com/snippets/css/font-stacks/ */
+	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+	margin: 0;
+	padding: 0;
+
+	/* spacing */
+	--space-small: 1rem;
+	--space-medium: calc(var(--space-small) * 2);
+	--space-large: calc(var(--space-medium) * 2);
+
+	/* light mode (default) https://coolors.co/f6bd60-f7ede2-f5cac3-84a59d-f28482 */
+	--text1-light: hsl(0, 80%, 4%);
+	--text2-light: hsl(1, 80%, 28%);
+	--text3-light: hsl(166, 15%, 32%);
+	--text4-light: hsl(37, 89%, 24%);
+	--surface1-light: hsl(31, 57%, 93%);
+	--surface2-light: hsl(8, 71%, 86%);
+	--surface3-light: hsl(31, 57%, 98%);
+
+	/* shadows https://shadows.brumm.af/ */
+	--shadow: 0px 0.8px 0.7px rgba(0, 0, 0, 0.02),
+		0px 2px 1.7px rgba(0, 0, 0, 0.028),
+		0px 3.8px 3.1px rgba(0, 0, 0, 0.035),
+		0px 6.7px 5.6px rgba(0, 0, 0, 0.042),
+		0px 12.5px 10.4px rgba(0, 0, 0, 0.05),
+		0px 30px 25px rgba(0, 0, 0, 0.07);
+	--shadow-elevated: 0px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+		0px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+		0px 12.5px 10px rgba(0, 0, 0, 0.035),
+		0px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+		0px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+		0px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+:root {
+	--text1: var(--text1-light);
+	--text2: var(--text2-light);
+	--text3: var(--text3-light);
+	--text4: var(--text4-light);
+	--surface1: var(--surface1-light);
+	--surface2: var(--surface2-light);
+	--surface3: var(--surface3-light);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+	}
+}
+
+body {
+	background-color: var(--surface1);
+	height: 100vh;
+}
+
+header {
+	background-color: var(--surface2);
+	box-shadow: var(--shadow);
+	color: var(--text2);
+	font-size: x-large;
+	padding: var(--space-large);
+	text-align: center;
+}
+
+h1 {
+	font-weight: normal;
+	letter-spacing: -.05em;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--space-medium);
+	justify-content: center;
+	padding: var(--space-large);
+}
+
+article {
+	transition-duration:  0.05s;
+	transition-property: transform, box-shadow;
+	transition-timing-function: ease-out;
+}
+
+article:hover {
+	transform: translateY(-10px) scale(1.05);
+}
+
+@media (prefers-reduced-motion) {
+	article {
+		transition-property: none;
+	}
+}
