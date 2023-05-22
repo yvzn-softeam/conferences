@@ -50,6 +50,7 @@ article {
 }
 
 article:hover {
+	background-color: var(--surface4);
 	box-shadow: var(--shadow-elevated);
 }
 
@@ -60,10 +61,6 @@ a {
 
 div {
 	padding: var(--space-small) var(--space-medium) var(--space-medium) var(--space-medium);
-}
-
-article div * + * {
-	/* padding-top: var(--space-small); */
 }
 
 h2 {

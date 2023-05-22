@@ -12,21 +12,36 @@
 	--space-large: calc(var(--space-medium) * 2);
 
 	/* light mode (default) https://coolors.co/f6bd60-f7ede2-f5cac3-84a59d-f28482 */
-	--text1-light: hsl(0, 80%, 4%);
+	--text1-light: hsl(4, 80%, 8%);
 	--text2-light: hsl(1, 80%, 28%);
 	--text3-light: hsl(166, 15%, 32%);
 	--text4-light: hsl(37, 89%, 24%);
 	--surface1-light: hsl(31, 57%, 93%);
 	--surface2-light: hsl(8, 71%, 86%);
 	--surface3-light: hsl(31, 57%, 98%);
+	--surface4-light: hsl(31, 57%, 98%);
 
 	/* shadows https://shadows.brumm.af/ */
-	--shadow: 0px 0.8px 0.7px rgba(0, 0, 0, 0.02), 0px 2px 1.7px rgba(0, 0, 0, 0.028),
+	--shadow-light: 0px 0.8px 0.7px rgba(0, 0, 0, 0.02), 0px 2px 1.7px rgba(0, 0, 0, 0.028),
 		0px 3.8px 3.1px rgba(0, 0, 0, 0.035), 0px 6.7px 5.6px rgba(0, 0, 0, 0.042),
 		0px 12.5px 10.4px rgba(0, 0, 0, 0.05), 0px 30px 25px rgba(0, 0, 0, 0.07);
-	--shadow-elevated: 0px 2.8px 2.2px rgba(0, 0, 0, 0.02), 0px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+	--shadow-elevated-light: 0px 2.8px 2.2px rgba(0, 0, 0, 0.02), 0px 6.7px 5.3px rgba(0, 0, 0, 0.028),
 		0px 12.5px 10px rgba(0, 0, 0, 0.035), 0px 22.3px 17.9px rgba(0, 0, 0, 0.042),
 		0px 41.8px 33.4px rgba(0, 0, 0, 0.05), 0px 100px 80px rgba(0, 0, 0, 0.07);
+
+	/* dark mode */
+	--text1-dark: hsl(0, 80%, 96%);
+	--text2-dark: hsl(8, 71%, 86%);
+	--text3-dark: hsl(166, 15%, 68%);
+	--text4-dark: hsl(37, 89%, 67%);
+	--surface1-dark: hsl(0, 80%, 4%);
+	--surface2-dark: hsl(8, 70%, 12%);
+	--surface3-dark: hsl(31, 57%, 12%);
+	--surface4-dark: hsl(31, 57%, 16%);
+
+	/* shadows in dark mode are tricky https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/ */
+	--shadow-dark: none;
+	--shadow-elevated-dark: none;
 }
 
 :root {
@@ -37,10 +52,27 @@
 	--surface1: var(--surface1-light);
 	--surface2: var(--surface2-light);
 	--surface3: var(--surface3-light);
+	--surface4: var(--surface3-light);
+	--shadow: var(--shadow-light);
+	--shadow-elevated: var(--shadow-elevated-light);
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
+		--text1: var(--text1-dark);
+		--text2: var(--text2-dark);
+		--text3: var(--text3-dark);
+		--text4: var(--text4-dark);
+		--surface1: var(--surface1-dark);
+		--surface2: var(--surface2-dark);
+		--surface3: var(--surface3-dark);
+		--surface4: var(--surface4-dark);
+		--shadow: var(--shadow-dark);
+		--shadow-eleveated: var(--shadow-elevated-dark);
+	}
+
+	img {
+		filter: brightness(0.8) contrast(1.2);
 	}
 }
 
@@ -73,7 +105,7 @@ main {
 
 article {
 	transition-duration: 0.05s;
-	transition-property: transform, box-shadow;
+	transition-property: transform, box-shadow, background-color;
 	transition-timing-function: ease-out;
 }
 
