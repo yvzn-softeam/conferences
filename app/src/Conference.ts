@@ -1,5 +1,5 @@
 export interface Conference {
-	id: number
+	id: string
 	title: string
 	date: {
 		start: Date

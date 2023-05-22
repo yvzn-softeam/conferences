@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed } from 'vue'
 
 const props = defineProps<{
-	start: Date,
+	start: Date
 	end?: Date
 }>()
 
@@ -15,7 +15,8 @@ const year = computed(() => props.start.getFullYear())
 
 <template>
 	<p v-if="end">
-		Du {{ startDate }} au <br /> {{ endDate }} {{ year }}
+		Du {{ startDate }} au <br />
+		{{ endDate }} {{ year }}
 	</p>
 	<p v-else>
 		{{ startDate }}

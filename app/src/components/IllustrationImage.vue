@@ -1,6 +1,6 @@
 <script setup lang="ts">
 defineProps<{
-	src: URL,
+	src: URL
 	description: string
 }>()
 </script>

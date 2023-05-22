@@ -5,8 +5,9 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
+	const githubPagesBasePath = '/conferences/'
 	return {
-		base: mode === 'production' ? '/conferences/' : '/',
+		base: mode === 'production' ? githubPagesBasePath : '/',
 		plugins: [vue()],
 		resolve: {
 			alias: {
