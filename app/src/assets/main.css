@@ -102,19 +102,3 @@ main {
 	justify-content: center;
 	padding: var(--space-large);
 }
-
-article {
-	transition-duration: 0.05s;
-	transition-property: transform, box-shadow, background-color;
-	transition-timing-function: ease-out;
-}
-
-article:hover {
-	transform: translateY(-10px) scale(1.05);
-}
-
-@media (prefers-reduced-motion) {
-	article {
-		transition-property: none;
-	}
-}

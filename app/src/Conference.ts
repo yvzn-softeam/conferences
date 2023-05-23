@@ -8,7 +8,7 @@ export interface Conference {
 	location: string
 	website: URL
 	illustration?: {
-		src: URL
+		src: string
 		description: string
 	}
 }
