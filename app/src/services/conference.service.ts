@@ -72,6 +72,34 @@ const allConferences: Conference[] = [
 			src: 'images/devoxx.webp',
 			description: 'un groupe de developpeurs sur scène portant des lettres géantes DEVOXX',
 		}
+	},
+	{
+		id: `conf-${Math.random().toString().substring(2)}`,
+		title: 'Le Camping des Speakers',
+		date: {
+			start: new Date('2023-06-15'),
+			end: new Date('2023-06-16')
+		},
+		location: 'Morbihan, France',
+		website: new URL('https://camping-speakers.fr/'),
+		illustration: {
+			src: 'images/camping-speakers.webp',
+			description: "deux ours en peluche grillent des marshmallows autour d'un feu de camp alimenté par un ordinateur",
+		}
+	},
+	{
+		id: `conf-${Math.random().toString().substring(2)}`,
+		title: 'AgileTour Rennes',
+		date: {
+			start: new Date('2023-10-19'),
+			end: new Date('2023-10-20')
+		},
+		location: 'Rennes, France',
+		website: new URL('https://agiletour.agilerennes.org/'),
+		illustration: {
+			src: 'images/agiletour-rennes.webp',
+			description: 'une hermine debout devant un tableau kanban',
+		}
 	}
 ]
 

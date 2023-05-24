@@ -10,6 +10,7 @@ const props = defineProps<{
 	conference: Conference
 }>()
 
+const hasLongTitle = computed(() => props.conference.title.length > 17)
 const hasExpired = computed(() => isExpired(props.conference))
 const labelId = computed(() => `${props.conference.id}-label`)
 </script>
@@ -20,7 +21,7 @@ const labelId = computed(() => `${props.conference.id}-label`)
 			<IllustrationImage v-if="conference.illustration" :src="conference.illustration?.src"
 				:description="conference.illustration?.description" />
 			<div :id="labelId">
-				<h2>{{ conference.title }}</h2>
+				<h2 :class="{ smaller: hasLongTitle }">{{ conference.title }}</h2>
 				<del v-if="hasExpired">
 					<DateRange :start="conference.date.start" :end="conference.date.end" />
 				</del>
@@ -84,6 +85,7 @@ a {
 }
 
 div {
+	min-height: 144px;
 	padding: var(--space-small) var(--space-medium) var(--space-medium) var(--space-medium);
 }
 
@@ -91,6 +93,11 @@ h2 {
 	color: var(--text3);
 	font-weight: normal;
 	letter-spacing: -0.05em;
+}
+
+h2.smaller {
+	font-size: 1.1rem;
+	line-height: 1.5rem;
 }
 
 img {

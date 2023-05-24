@@ -10,7 +10,7 @@ const conferenceList = ref(conferences)
 
 <template>
 	<header>
-		<h1>Conférences</h1>
+		<h1>Agenda Conférences Tech</h1>
 	</header>
 	<main>
 		<ConferenceCard
