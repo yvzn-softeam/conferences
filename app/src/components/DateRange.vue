@@ -19,7 +19,7 @@ const year = computed(() => props.start.getFullYear())
 		{{ endDate }} {{ year }}
 	</p>
 	<p v-else>
-		{{ startDate }}
+		Le {{ startDate }} {{ year }}
 	</p>
 </template>
 

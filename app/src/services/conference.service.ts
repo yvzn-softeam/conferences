@@ -100,6 +100,33 @@ const allConferences: Conference[] = [
 			src: 'images/agiletour-rennes.webp',
 			description: 'une hermine debout devant un tableau kanban',
 		}
+	},
+	{
+		id: `conf-${Math.random().toString().substring(2)}`,
+		title: 'Nantes Digital Week',
+		date: {
+			start: new Date('2023-09-14'),
+			end: new Date('2023-09-25')
+		},
+		location: 'Nantes, France',
+		website: new URL('https://nantesdigitalweek.com/le-programme-du-festival/'),
+		illustration: {
+			src: 'images/nantesdigitalweek.webp',
+			description: '',
+		}
+	},
+	{
+		id: `conf-${Math.random().toString().substring(2)}`,
+		title: 'Salon de la Data',
+		date: {
+			start: new Date('2023-09-19')
+		},
+		location: 'Nantes, France',
+		website: new URL('https://salondata.fr/'),
+		illustration: {
+			src: 'images/salondata.webp',
+			description: '',
+		}
 	}
 ]
 

@@ -3,7 +3,7 @@ export interface Conference {
 	title: string
 	date: {
 		start: Date
-		end: Date
+		end?: Date
 	}
 	location: string
 	website: URL
