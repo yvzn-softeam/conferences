@@ -2,6 +2,8 @@
 
 Agenda des conférences technologiques à venir dans l'ouest de la France
 
+[Consulter l'agenda](https://ludeo.net/conferences/)
+
 ## Run locally
 
 This project is built with [VueJS](https://github.com/vuejs/core)

@@ -56,7 +56,7 @@ const allConferences: Conference[] = [
 		website: new URL('https://www.breizhcamp.org/'),
 		illustration: {
 			src: 'images/breizhcamp.webp',
-			description: 'un auditorium rempli de participants'
+			description: 'un auditorium rempli de participants à une conférence'
 		}
 	},
 	{
@@ -84,7 +84,7 @@ const allConferences: Conference[] = [
 		website: new URL('https://camping-speakers.fr/'),
 		illustration: {
 			src: 'images/camping-speakers.webp',
-			description: "deux ours en peluche grillent des marshmallows autour d'un feu de camp alimenté par un ordinateur",
+			description: "deux ours en peluche cuisent des marshmallows autour d'un feu de camp alimenté par un ordinateur",
 		}
 	},
 	{
@@ -112,7 +112,7 @@ const allConferences: Conference[] = [
 		website: new URL('https://nantesdigitalweek.com/le-programme-du-festival/'),
 		illustration: {
 			src: 'images/nantesdigitalweek.webp',
-			description: '',
+			description: 'des enfants apprenant à programmer des robots dans une classe',
 		}
 	},
 	{
@@ -125,7 +125,7 @@ const allConferences: Conference[] = [
 		website: new URL('https://salondata.fr/'),
 		illustration: {
 			src: 'images/salondata.webp',
-			description: '',
+			description: "le lounge d'un centre de congrès, un écran géant affiche une data visualisation",
 		}
 	}
 ]

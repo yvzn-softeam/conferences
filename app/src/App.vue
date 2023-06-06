@@ -9,14 +9,7 @@ const conferenceList = ref(conferences)
 </script>
 
 <template>
-	<header>
-		<h1>Agenda Conférences Tech</h1>
-	</header>
 	<main>
-		<ConferenceCard
-			v-for="conference in conferenceList"
-			:conference="conference"
-			:key="conference.id"
-		/>
+		<ConferenceCard v-for="conference in conferenceList" :conference="conference" :key="conference.id" />
 	</main>
 </template>

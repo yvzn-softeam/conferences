@@ -64,7 +64,7 @@ article:hover {
 }
 
 article.expired {
-	filter: grayscale(1) contrast(.7) brightness(1.2);
+	filter: grayscale(1) contrast(.8) brightness(1.4);
 	transform: scale(.8);
 }
 
