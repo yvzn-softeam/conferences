@@ -70,7 +70,7 @@ const allConferences: Conference[] = [
 		website: new URL('https://www.devoxx.fr/'),
 		illustration: {
 			src: 'images/devoxx.webp',
-			description: 'un groupe de developpeurs sur scène portant des lettres géantes DEVOXX',
+			description: 'un groupe de developpeurs sur scène portant des lettres géantes DEVOXX'
 		}
 	},
 	{
@@ -84,7 +84,8 @@ const allConferences: Conference[] = [
 		website: new URL('https://camping-speakers.fr/'),
 		illustration: {
 			src: 'images/camping-speakers.webp',
-			description: "deux ours en peluche cuisent des marshmallows autour d'un feu de camp alimenté par un ordinateur",
+			description:
+				"deux ours en peluche cuisent des marshmallows autour d'un feu de camp alimenté par un ordinateur"
 		}
 	},
 	{
@@ -98,7 +99,7 @@ const allConferences: Conference[] = [
 		website: new URL('https://agiletour.agilerennes.org/'),
 		illustration: {
 			src: 'images/agiletour-rennes.webp',
-			description: 'une hermine debout devant un tableau kanban',
+			description: 'une hermine debout devant un tableau kanban'
 		}
 	},
 	{
@@ -112,7 +113,7 @@ const allConferences: Conference[] = [
 		website: new URL('https://nantesdigitalweek.com/le-programme-du-festival/'),
 		illustration: {
 			src: 'images/nantesdigitalweek.webp',
-			description: 'des enfants apprenant à programmer des robots dans une classe',
+			description: 'des enfants apprenant à programmer des robots dans une classe'
 		}
 	},
 	{
@@ -125,7 +126,7 @@ const allConferences: Conference[] = [
 		website: new URL('https://salondata.fr/'),
 		illustration: {
 			src: 'images/salondata.webp',
-			description: "le lounge d'un centre de congrès, un écran géant affiche une data visualisation",
+			description: "le lounge d'un centre de congrès, un écran géant affiche une data visualisation"
 		}
 	}
 ]

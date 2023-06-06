@@ -16,10 +16,18 @@ const labelId = computed(() => `${props.conference.id}-label`)
 </script>
 
 <template>
-	<a :href="conference.website.toString()" target="_blank" rel="noopener" :aria-labelledby="labelId">
+	<a
+		:href="conference.website.toString()"
+		target="_blank"
+		rel="noopener"
+		:aria-labelledby="labelId"
+	>
 		<article :class="{ expired: hasExpired }">
-			<IllustrationImage v-if="conference.illustration" :src="conference.illustration?.src"
-				:description="conference.illustration?.description" />
+			<IllustrationImage
+				v-if="conference.illustration"
+				:src="conference.illustration?.src"
+				:description="conference.illustration?.description"
+			/>
 			<div :id="labelId">
 				<h2 :class="{ smaller: hasLongTitle }">{{ conference.title }}</h2>
 				<del v-if="hasExpired">
@@ -54,7 +62,7 @@ article {
 article:hover {
 	background-color: var(--surface4);
 	box-shadow: var(--shadow-elevated);
-	transform: translateY(calc(var(--space-small) * -.5)) scale(1.05);
+	transform: translateY(calc(var(--space-small) * -0.5)) scale(1.05);
 }
 
 @media (prefers-reduced-motion) {
@@ -64,19 +72,19 @@ article:hover {
 }
 
 article.expired {
-	filter: grayscale(1) contrast(.8) brightness(1.4);
-	transform: scale(.8);
+	filter: grayscale(1) contrast(0.8) brightness(1.4);
+	transform: scale(0.8);
 }
 
 @media (prefers-color-scheme: dark) {
 	article.expired {
-		filter: grayscale(1) contrast(.7);
+		filter: grayscale(1) contrast(0.7);
 	}
 }
 
 article.expired:hover {
 	filter: none;
-	transform: translateY(calc(var(--space-small) * -.5)) scale(.85);
+	transform: translateY(calc(var(--space-small) * -0.5)) scale(0.85);
 }
 
 a {

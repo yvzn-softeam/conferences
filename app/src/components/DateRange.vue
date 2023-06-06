@@ -18,9 +18,7 @@ const year = computed(() => props.start.getFullYear())
 		Du {{ startDate }} au <br />
 		{{ endDate }} {{ year }}
 	</p>
-	<p v-else>
-		Le {{ startDate }} {{ year }}
-	</p>
+	<p v-else>Le {{ startDate }} {{ year }}</p>
 </template>
 
 <style scoped>
