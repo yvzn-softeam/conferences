@@ -63,8 +63,8 @@ const allConferences: Conference[] = [
 		id: `conf-${Math.random().toString().substring(2)}`,
 		title: 'Devoxx France',
 		date: {
-			start: new Date('2023-04-12'),
-			end: new Date('2023-04-14')
+			start: new Date('2024-04-17'),
+			end: new Date('2024-04-19')
 		},
 		location: 'Paris, France',
 		website: new URL('https://www.devoxx.fr/'),
