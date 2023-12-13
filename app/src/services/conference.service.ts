@@ -3,10 +3,10 @@ import type { Conference } from '@/Conference'
 const allConferences: Conference[] = [
 	{
 		id: `conf-${Math.random().toString().substring(2)}`,
-		title: 'Web2day',
+		title: 'Et demain ? (Web2day)',
 		date: {
-			start: new Date('2023-05-31'),
-			end: new Date('2023-06-02')
+			start: new Date('2024-06-05'),
+			end: new Date('2024-06-06')
 		},
 		location: 'Nantes, France',
 		website: new URL('https://web2day.co/'),
@@ -19,11 +19,11 @@ const allConferences: Conference[] = [
 		id: `conf-${Math.random().toString().substring(2)}`,
 		title: 'DevFest Nantes',
 		date: {
-			start: new Date('2023-10-19'),
-			end: new Date('2023-10-20')
+			start: new Date('2024-10-17'),
+			end: new Date('2024-10-18')
 		},
 		location: 'Nantes, France',
-		website: new URL('https://devfest2023.gdgnantes.com/'),
+		website: new URL('https://devfest.gdgnantes.com/'),
 		illustration: {
 			src: 'images/devfest.webp',
 			description: "le grand hall d'un centre de conférence"
