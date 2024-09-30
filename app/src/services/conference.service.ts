@@ -33,12 +33,12 @@ const allConferences: Conference[] = [
 		id: `conf-${Math.random().toString().substring(2)}`,
 		title: 'AgileTour Nantes',
 		date: {
-			start: new Date('2023-11-02'),
-			end: new Date('2023-11-03')
+			start: new Date('2024-10-30'),
+			end: new Date('2024-10-31')
 		},
 		location: 'Nantes, France',
 		website: new URL(
-			'https://agilenantes.org/evenements/agile-tour-nantes/agile-tour-nantais-2023/'
+			'https://agilenantes.org/evenements/agile-tour-nantes/'
 		),
 		illustration: {
 			src: 'images/agiletour.webp',
@@ -92,8 +92,8 @@ const allConferences: Conference[] = [
 		id: `conf-${Math.random().toString().substring(2)}`,
 		title: 'AgileTour Rennes',
 		date: {
-			start: new Date('2023-10-19'),
-			end: new Date('2023-10-20')
+			start: new Date('2024-11-13'),
+			end: new Date('2024-11-14')
 		},
 		location: 'Rennes, France',
 		website: new URL('https://agiletour.agilerennes.org/'),
